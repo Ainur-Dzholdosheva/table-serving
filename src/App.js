@@ -1,12 +1,13 @@
 import React from 'react';
 import './App.css';
+import Layout from './components/Layout/Layout';
 
-function App() {
+export default () => {
   return (
     <div className="App">
-     Table Serving by Ainur Dzholdosheva
+      <Layout>
+       Table builder
+      </Layout>
     </div>
   );
 }
-
-export default App;
