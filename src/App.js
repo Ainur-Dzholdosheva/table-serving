@@ -6,7 +6,7 @@ export default () => {
   return (
     <div className="App">
       <Layout>
-       Table builder
+       Table serving
       </Layout>
     </div>
   );
