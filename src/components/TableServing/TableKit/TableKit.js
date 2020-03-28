@@ -4,13 +4,9 @@ import SeaFood from './SeaFood/SeaFood';
 
 export default () => (
     <div className={classes.TableKit}>
-      <SeaFood/> 
-      <SeaFood/>
-      <SeaFood/>
-      <SeaFood/>
-      <SeaFood/>
-      <SeaFood/>
-      <SeaFood/>
-      <SeaFood/>
+      <SeaFood type="fish"/> 
+      <SeaFood type="crab"/>
+      <SeaFood type="salmon"/>
+     
     </div>
 );
