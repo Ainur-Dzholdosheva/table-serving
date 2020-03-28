@@ -1,0 +1,9 @@
+.TableKit{
+    border:3px solid gray;
+    background-color: lightgray;
+    width: 400px;
+    height:400px;
+
+    display: flex;
+    flex-flow: row-wrap;
+}
