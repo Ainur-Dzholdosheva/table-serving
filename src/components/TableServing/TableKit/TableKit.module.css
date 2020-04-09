@@ -3,10 +3,44 @@
     background-color: lightgray;
     width: 400px;
     height:300px;
-    padding-top: .5rem;
-    padding-left: .5rem;
-
-    display: flex;
-    flex-flow: row-wrap;
-
+    /* padding-top: .5rem;
+    padding-left: .5rem; */
+     
 }
+ .TableKit div{
+     border:1px solid red;
+     width:400px;
+     height:50px;
+     
+    
+ }
+ .TableKit div:nth-child(1){
+    width:400px;
+    height: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+ .TableKit div:nth-child(2){
+     width:50px;
+     height: 180px;
+     padding-bottom: 20px;
+     display: flex;
+     flex-wrap:wrap;
+     
+ }
+ .TableKit div:nth-child(3){
+    width:50px;
+    height: 180px;
+    margin-left: 350px;
+    margin-top: -200px;
+}
+.TableKit div:nth-child(4){
+    width:400px;
+    height: 50px;
+    display: flex;
+    flex-wrap:wrap;
+    
+}
+ 
+ 

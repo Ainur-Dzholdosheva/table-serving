@@ -5,9 +5,9 @@ import classes from './TableServing.module.css';
 export default () => {
 
   const [ingredients, setIngredients]=useState({
-     fish:5,
-     crab:3,
-     salmon:4,
+     fish:1,
+     crab:1,
+     salmon:1,
   });
   return(
     <div className={classes.TableServing}>

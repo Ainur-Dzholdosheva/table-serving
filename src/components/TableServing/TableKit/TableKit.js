@@ -2,13 +2,23 @@ import React from 'react';
 import classes from './TableKit.module.css';
 import SeaFood from './SeaFood/SeaFood';
 
-export default () => {
- 
+export default ({ingredients}) => {
+ let ingredientsOutput=[];
+
+ Object.keys(ingredients).forEach(type => {
+   for(let i=0; i<ingredients[type]; i++){
+     ingredientsOutput.push(<SeaFood key={type+i} type={type} />);
+   }
+ });
   return(
     <div className={classes.TableKit}>
-      <SeaFood type="fish" /> 
-      <SeaFood type="crab"/>
-      <SeaFood type="salmon"/>
+      <div></div>
+       
+     
+      <div>{ingredientsOutput}</div>
+      <div></div>
+      <div></div>
+     
      
     </div>
   )};
