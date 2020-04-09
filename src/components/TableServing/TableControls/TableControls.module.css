@@ -1,0 +1,12 @@
+.TableControls{
+    border:3px solid green;
+    background-color: rgb(30, 66, 55);
+    width: 400px;
+    height:300px; 
+    
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}

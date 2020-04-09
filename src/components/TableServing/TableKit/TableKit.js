@@ -15,9 +15,9 @@ export default ({ingredients}) => {
       <div></div>
        
      
+      <div></div>
+      <div></div>
       <div>{ingredientsOutput}</div>
-      <div></div>
-      <div></div>
      
      
     </div>

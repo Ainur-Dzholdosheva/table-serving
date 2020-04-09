@@ -1,0 +1,13 @@
+.TableControl{
+    margin-bottom: 1rem;
+}
+.TableControl .label{
+    color:white;
+}
+
+.TableControl button{
+  border: 1px solid red;
+  background-color: brown;
+  color:white;
+
+}
