@@ -4,37 +4,36 @@
     width: 400px;
     height:300px;
     margin-left: 50px;
-    padding-top: .5rem;
-    padding-left: .5rem;
-   
-     
+
 }
  .TableKit div:nth-child(1){
-     border: 1px solid red;
+    border: 1px solid red;
     width:400px;
     height: 50px;
     padding-bottom: 6px;
     display: flex;
     flex-flow:row nowrap;
-    
+    justify-content: center;
 }
  .TableKit div:nth-child(2){
     border: 1px solid red;
-     width:50px;
+     width:70px;
      height: 180px;
      margin-bottom: 20px;
      display: flex;
      flex-flow: column nowrap;
+     align-content: center;
      
  }
  .TableKit div:nth-child(3){
     border: 1px solid red;
-    width:50px;
+    width:70px;
     height: 180px;
-    margin-left: 350px;
+    margin-left: 330px;
     margin-top: -200px;
     display: flex;
     flex-flow: column nowrap;
+    
 }
 .TableKit div:nth-child(4){
     border: 1px solid red;
