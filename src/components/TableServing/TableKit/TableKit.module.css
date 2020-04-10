@@ -6,6 +6,10 @@
     margin-left: 50px;
 
 }
+.TableKit .price{
+    font-size: 2rem;
+    font-weight: bold;
+}
  .TableKit div:nth-child(1){
     border: 1px solid red;
     width:400px;

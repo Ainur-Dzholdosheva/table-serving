@@ -2,7 +2,7 @@ import React from 'react';
 import classes from './TableKit.module.css';
 import SeaFood from './SeaFood/SeaFood';
 
-export default ({ingredients}) => {
+export default ({price,ingredients}) => {
  let ingredientsOutput=[];
 
  Object.keys(ingredients).forEach(type => {
@@ -17,6 +17,6 @@ export default ({ingredients}) => {
       <div>{ingredientsOutput}</div>
       <div>{ingredientsOutput}</div>
       <div>{ingredientsOutput}</div>
-      
+      <div className={classes.price}>Total price {price} som</div>
      </div>
   )};
