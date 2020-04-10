@@ -6,9 +6,9 @@ import TableControls from '../../components/TableServing/TableControls/TableCont
 export default () => {
 
   const [ingredients, setIngredients]=useState({
-     fish:2,
-     crab:2,
-     salmon:2,
+     fish:1,
+     crab:1,
+     salmon:1,
   });
   return(
     <div className={classes.TableServing}>

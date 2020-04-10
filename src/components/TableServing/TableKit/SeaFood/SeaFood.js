@@ -21,8 +21,8 @@ export default ({type}) => {
   }
   
   return(
-    <div className={SeaFoodClasses.join(' ')}>
+    <span className={SeaFoodClasses.join(' ')}>
       
-    </div>
+    </span>
 );
 };

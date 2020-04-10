@@ -12,12 +12,14 @@ export default ({ingredients}) => {
  });
   return(
     <div className={classes.TableKit}>
+     
       <div></div>
        
      
       <div></div>
       <div></div>
       <div>{ingredientsOutput}</div>
+      
      
      
     </div>
