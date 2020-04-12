@@ -38,7 +38,9 @@ export default () => {
   return(
     <div className={classes.TableServing}>
       <TableKit price={price} ingredients={ingredients}/>
-      <TableControls addIngredient={addIngredient}
+      <TableControls 
+      ingredients={ingredients}
+      addIngredient={addIngredient}
       removeIngredient={removeIngredient}/>  
     </div>
   )};

@@ -1,7 +1,7 @@
 .TableKit{
     border:3px solid gray;
     background-color: lightgray;
-    width: 400px;
+    width: 407px;
     height:300px;
     margin-left: 50px;
 
@@ -13,8 +13,7 @@
  .TableKit div:nth-child(1){
     border: 1px solid red;
     width:400px;
-    height: 50px;
-    padding-bottom: 6px;
+    height: 55px;
     display: flex;
     flex-flow:row nowrap;
     justify-content: center;
@@ -35,6 +34,7 @@
     height: 180px;
     margin-left: 330px;
     margin-top: -200px;
+    margin-top: -200px;
     display: flex;
     flex-flow: column nowrap;
     
@@ -42,8 +42,8 @@
 .TableKit div:nth-child(4){
     border: 1px solid red;
     width:400px;
-    height: 50px;
-    padding-bottom: 5px;
+    height: 59px;
+    
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;

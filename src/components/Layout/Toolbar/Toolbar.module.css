@@ -1,6 +1,10 @@
 .Toolbar{
-    background-color: mediumpurple;
-    color:darkblue;
-    
+    display: flex;
+    min-height: 50px;
+    justify-content: space-between;
+
+
+    background-color: #f5bc52;
+    font-weight: bold;
     
 }
