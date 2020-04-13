@@ -28,3 +28,18 @@ background-color: green;
  background-color: yellow; 
   
 }
+.lobster{
+  border-radius: 50%;
+  border: 10px solid violet;
+  background-color: blue;
+}
+.shrimp{
+  border-radius: 50%;
+  border: 10px solid green;
+  background-color: violet;
+}
+.cavior{
+  border-radius: 50%;
+  border: 10px solid violet;
+  background-color: brown;
+}

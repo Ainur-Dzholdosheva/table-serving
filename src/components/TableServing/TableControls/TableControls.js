@@ -6,6 +6,9 @@ const CONTROLS = [
     {label:"Fish", type:"fish"},
     {label:"Crab", type:"crab"},
     {label:"Salmon", type:"salmon"},
+    {label:"Lobster", type:"lobster"},
+    {label:"Caviar", type:"cavior"},
+    {label:"Shrimp", type:"shrimp"},
 ];
 export default({ingredients,addIngredient, removeIngredient}) => {
     

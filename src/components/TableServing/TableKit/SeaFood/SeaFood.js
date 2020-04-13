@@ -15,9 +15,25 @@ export default ({type}) => {
       break;
 
     case 'salmon':
-      default:
+     
         SeaFoodClasses.push(classes.salmon);
       break;
+
+    case 'lobster':
+        
+          SeaFoodClasses.push(classes.lobster);
+        break;
+
+    case 'shrimp':
+        
+          SeaFoodClasses.push(classes.shrimp);
+        break;
+
+    case 'cavior':
+        default:
+          SeaFoodClasses.push(classes.cavior);
+        break;
+
   }
   
   return(

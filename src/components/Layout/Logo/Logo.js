@@ -4,7 +4,7 @@ import classes from './Logo.module.css';
 
 export default () => (
  <div className={classes.Logo}>
-     <img src="https://vectr.com/ainurdzholdosheva/b7CTKHd2F.svg?width=250&height=250&select=b7CTKHd2Fpage0" />
-     <span>Table serving</span>
+    <img src="https://vectr.com/ainurdzholdosheva/a1KxXkUpxn.svg?width=640&height=640&select=a1KxXkUpxnpage0" />
+     <span> Table serving</span>
  </div>  
 );

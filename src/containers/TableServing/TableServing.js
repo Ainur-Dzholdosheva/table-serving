@@ -7,6 +7,9 @@ const PRICES={
   fish:150,
   crab:250,
   salmon:180,
+  lobster:150,
+  shrimp:170,
+  cavior:200,
 };
 export default () => {
 
@@ -14,6 +17,9 @@ export default () => {
      fish:0,
      crab:0,
      salmon:0,
+     lobster:0,
+     shrimp:0,
+     cavior:0,
   });
   const [price, setPrice]=useState(100);
   function addIngredient(type){
