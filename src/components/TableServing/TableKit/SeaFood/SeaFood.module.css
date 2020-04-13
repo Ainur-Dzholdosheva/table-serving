@@ -31,12 +31,10 @@ background-color: green;
 .lobster{
   border-radius: 50%;
   border: 10px solid violet;
-  background-color: blue;
+  background-color: darkblue;
 }
 .shrimp{
-  border-radius: 50%;
-  border: 10px solid green;
-  background-color: violet;
+background-image: url(../../../../assets/shrimp.svg);
 }
 .cavior{
   border-radius: 50%;

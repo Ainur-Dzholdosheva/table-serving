@@ -15,8 +15,10 @@
     width:400px;
     height: 55px;
     display: flex;
-    flex-flow:row nowrap;
+    flex-flow:row wrap;
     justify-content: center;
+
+    overflow: hidden;
 }
  .TableKit div:nth-child(2){
     border: 1px solid transparent;

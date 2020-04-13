@@ -1,5 +1,5 @@
 import React from 'react';
-import logo from '../../../assets/logo.svg';
+import lobster from '../../../assets/lobster.svg';
 import classes from './Logo.module.css';
 
 export default () => (
