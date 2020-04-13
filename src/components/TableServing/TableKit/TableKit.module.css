@@ -1,6 +1,6 @@
 .TableKit{
-    border:3px solid gray;
-    background-color: lightgray;
+    border:3px solid orange;
+    background-color: rgb(243, 193, 101);
     width: 407px;
     height:300px;
     margin-left: 50px;
@@ -11,7 +11,7 @@
     font-weight: bold;
 }
  .TableKit div:nth-child(1){
-    border: 1px solid red;
+    border: 1px solid transparent;
     width:400px;
     height: 55px;
     display: flex;
@@ -19,7 +19,7 @@
     justify-content: center;
 }
  .TableKit div:nth-child(2){
-    border: 1px solid red;
+    border: 1px solid transparent;
      width:70px;
      height: 180px;
      margin-bottom: 20px;
@@ -29,7 +29,7 @@
      
  }
  .TableKit div:nth-child(3){
-    border: 1px solid red;
+    border: 1px solid transparent;
     width:70px;
     height: 180px;
     margin-left: 330px;
@@ -40,7 +40,7 @@
     
 }
 .TableKit div:nth-child(4){
-    border: 1px solid red;
+    border: 1px solid transparent;
     width:400px;
     height: 59px;
     
