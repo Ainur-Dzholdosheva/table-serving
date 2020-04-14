@@ -17,7 +17,7 @@ export default ({price,ingredients}) => {
       <div> {ingredientsOutput}</div>
       <div></div>
       <div></div>
-      <div></div>
+      <div>{ingredientsOutput}</div>
       <div className={classes.price}>Total price {price} som</div>
      </div>
   )};
