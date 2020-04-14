@@ -9,7 +9,7 @@ export default({control, removeIngredient, addIngredient, disabled}) =>{
               onClick={() => removeIngredient(control.type)} 
               disabled={disabled}>less</button>
               
-          <span className={classes.label}>{control.label}</span> 
+          <h2 className={classes.label}>{control.label}</h2> 
              
               <button className={classes.more} onClick={() => addIngredient(control.type)}>more</button>
         </div>

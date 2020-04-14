@@ -2,7 +2,9 @@
     margin-bottom: 1rem;
 }
 .TableControl .label{
-    color:white;
+    color:rgb(48, 18, 18);
+    font-weight: bold;
+    font-style: italic;
 }
 
 .TableControl button{
