@@ -1,8 +1,8 @@
 .SeaFood{
-    width:40px;
-    height:30px;
-    border-radius: 10px;
-    border: 1px solid darkblue;
+    width:50px;
+    height:50px;
+    border-radius: 30px;
+    border: 1px solid white;
     
 
   /* margin-right: .5rem;
@@ -17,15 +17,11 @@ background-color: white;
 }
 
 .crab{
-border-radius: 50%;
-border: 10px solid tomato;
-background-color: green;
+  background-image: url(../../../../assets/crab22.png);
 
 }
 .salmon{
- border-radius: 50%;
- border: 10px solid green;
- background-color: yellow; 
+ 
   
 }
 .lobster{
@@ -34,10 +30,8 @@ background-color: green;
   background-color: darkblue;
 }
 .shrimp{
-background-image: url(../../../../assets/shrimp.svg);
+background-image: url(../../../../assets/shrimp22.png);
 }
 .cavior{
-  border-radius: 50%;
-  border: 10px solid violet;
-  background-color: brown;
+  background-image: url(../../../../assets/caviar22.png);
 }
