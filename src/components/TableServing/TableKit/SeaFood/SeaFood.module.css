@@ -2,32 +2,25 @@
     width:50px;
     height:50px;
     border-radius: 30px;
-    border: 1px solid white;
     
-
-  /* margin-right: .5rem;
-  margin-bottom: .5rem;  */
-  
+    margin: 10px;
 
 }
 .fish{
-border-radius:50%;
-border:10px solid red;
-background-color: white;
+  background-image: url(../../../../assets/fish23.png);
+
 }
 
 .crab{
-  background-image: url(../../../../assets/crab22.png);
+  background-image: url(../../../../assets/crab23.png); 
 
 }
 .salmon{
- 
+  background-image: url(../../../../assets/fish22.png);
   
 }
 .lobster{
-  border-radius: 50%;
-  border: 10px solid violet;
-  background-color: darkblue;
+  background-image: url(../../../../assets/lobster22.png);
 }
 .shrimp{
 background-image: url(../../../../assets/shrimp22.png);
