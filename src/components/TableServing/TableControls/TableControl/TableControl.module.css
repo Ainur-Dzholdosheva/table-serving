@@ -18,3 +18,9 @@
   color:blue;
 
 }
+.TableControl button:disabled {
+  opacity: .5;
+}
+.TableControl button:not(:disabled):hover {
+  opacity: .8;
+}

@@ -22,6 +22,15 @@ export default () => {
      cavior:0,
   });
   const [price, setPrice]=useState(100);
+  const[canOrder, setCanOrder]=useState(false);
+
+  function checkCanOrder(ingredients){
+    const total=Object.keys(ingredients).reduce((total, ingredient) => {
+      return total + ingredients[ingredient];
+    },0);
+    setCanOrder(total > 0);
+  }
+  
   function addIngredient(type){
    const newIngredients={...ingredients};
    newIngredients[type]++;
@@ -29,6 +38,7 @@ export default () => {
 
    const newPrice = price + PRICES[type];
    setPrice(newPrice);
+   checkCanOrder(newIngredients);
   };
 
   function removeIngredient(type){
@@ -36,9 +46,11 @@ export default () => {
     const newIngredients={...ingredients};
     newIngredients[type]--;
     setIngredients(newIngredients);
+    checkCanOrder(newIngredients);
 
     const newPrice = price - PRICES[type];
    setPrice(newPrice);
+   
   }};
   
   return(
@@ -47,6 +59,9 @@ export default () => {
       <TableControls 
       ingredients={ingredients}
       addIngredient={addIngredient}
-      removeIngredient={removeIngredient}/>  
+      removeIngredient={removeIngredient}
+      canOrder={canOrder}/>  
+     
     </div>
-  )};
+  );
+  }
