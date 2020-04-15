@@ -1,6 +1,7 @@
 import React from 'react';
 import classes from './TableControls.module.css';
 import TableControl from './TableControl/TableControl.js'
+import Button from "../../UI/Button/Button.js";
 
 const CONTROLS = [
     {label:"Fish", type:"fish"},
@@ -10,7 +11,7 @@ const CONTROLS = [
     {label:"Caviar", type:"cavior"},
     {label:"Shrimp", type:"shrimp"},
 ];
-export default({canOrder,ingredients,addIngredient, removeIngredient}) => {
+export default({startOrder, canOrder,ingredients,addIngredient, removeIngredient}) => {
     
     const controlsOutput = CONTROLS.map(control => 
     <TableControl control={control} 
@@ -20,7 +21,9 @@ export default({canOrder,ingredients,addIngredient, removeIngredient}) => {
     return(
     <div className={classes.TableControls}>
          {controlsOutput}
-         <button disabled={!canOrder} className={classes.orderButton}>Order</button>
+         <Button click={startOrder} enabled={canOrder}>
+        Order
+      </Button>
     </div>
     )
 }
