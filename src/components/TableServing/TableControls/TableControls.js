@@ -20,6 +20,7 @@ export default({ingredients,addIngredient, removeIngredient}) => {
     return(
     <div className={classes.TableControls}>
          {controlsOutput}
+         <button>Order</button>
     </div>
     )
 }

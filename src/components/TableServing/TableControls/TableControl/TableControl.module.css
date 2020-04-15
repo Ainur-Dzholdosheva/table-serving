@@ -6,10 +6,15 @@
     font-weight: bold;
     font-style: italic;
 }
-
+.TableControl span{
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 20px;
+}
 .TableControl button{
-  border: 1px solid greenyellow;
-  background-color: darkolivegreen;
-  color:white;
+  border: none;
+  border-radius: 10px;
+  background-color: white;
+  color:blue;
 
 }
