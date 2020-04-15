@@ -77,7 +77,7 @@ export default () => {
       ingredients={ingredients}
       addIngredient={addIngredient}
       removeIngredient={removeIngredient}
-      canOrder={canOrder}/>  
+      />  
      
      <Modal show={isOrdering} hideCallback={cancelOrder}>
         <OrderSummary
