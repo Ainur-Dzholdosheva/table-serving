@@ -1,8 +1,11 @@
 import React from 'react';
 import classes from './Navigation.module.css';
+import NavigationItem from './NavigationItem/NavigationItem';
 
 export default () => (
- <nav className={classes.Navigation}>
-     Nav
- </nav>  
+ <ul className={classes.Navigation}>
+     
+     <NavigationItem url="/">Sushi Builder</NavigationItem>
+    <NavigationItem url="/checkout">Checkout</NavigationItem>
+ </ul>  
 );

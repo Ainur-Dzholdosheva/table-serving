@@ -6,6 +6,9 @@ import Navigation from './Navigation/Navigation';
 export default () => (
     <div className={classes.Toolbar}>
         <Logo/>
+        <nav>
         <Navigation/>
+        </nav>
+        
     </div>
 );

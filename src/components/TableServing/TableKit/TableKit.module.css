@@ -1,9 +1,10 @@
 .TableKit{
     border:3px solid orange;
     background-color: rgb(243, 193, 101);
-    width: 407px;
-    height:300px;
-    margin-left: 50px;
+    width:100%;
+    max-width: 500px;
+    height:345px;
+    
     margin-bottom: 40px;
 }
 .TableKit .price{
@@ -14,20 +15,21 @@
     justify-content: center;
 }
  .TableKit div:nth-child(1){
-    border: 1px solid transparent;
-    width:400px;
-    height: 60px;
+    border: 1px solid red;
+    width:495px;
+    height: 70px;
     display: flex;
     flex-flow:row wrap;
     justify-content: center;
-    margin-top: -10px;
+    align-content: center;
+   
 
     overflow: hidden;
 }
  .TableKit div:nth-child(2){
-    border: 1px solid transparent;
+    border: 1px solid red;
      width:70px;
-     height: 180px;
+     height: 200px;
      margin-bottom: 20px;
      display: flex;
      flex-flow: column wrap;
@@ -36,27 +38,43 @@
      overflow: hidden;
  }
  .TableKit div:nth-child(3){
-    border: 1px solid transparent;
+    border: 1px solid red;
     width:70px;
-    height: 180px;
-    margin-left: 330px;
-    margin-top: -200px;
-    margin-top: -200px;
+    height: 200px;
+    margin-left: 425px;
+    margin-top: -220px;
     display: flex;
     flex-flow: column nowrap;
     
 }
 .TableKit div:nth-child(4){
-    border: 1px solid transparent;
-    width:400px;
-    height: 59px;
+    border: 1px solid red;
+    width:495px;
+    height: 70px;
+
     
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    flex-flow: row wrap;
     justify-content: center;
+    align-content: center;
     overflow: hidden;
     
 }
- 
+
+@media (max-width:480px){
+    .TableKit{
+        width:450px;
+        margin-left: 120px;
+    }
+    .TableKit div:nth-child(1){
+        width:446px;
+    }
+    .TableKit div:nth-child(3){
+      margin-left: 376px;
+    }
+    .TableKit div:nth-child(4){
+        width:446px;
+    }
+}
+
  
