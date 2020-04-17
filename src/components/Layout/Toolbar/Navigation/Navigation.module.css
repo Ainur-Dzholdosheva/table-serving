@@ -1,5 +1,7 @@
 .Navigation{
     list-style: none;
     display: flex;
+    margin:0 12px;
+    padding: 0;
     
 }

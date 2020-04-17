@@ -3,13 +3,16 @@
     display: flex;
     justify-content: space-between;
 
-
     background-color: #f8b842;
     font-weight: bold;
     
 }
-@media (max-width:550px){
-    .Toolbar{
-        min-width: 483px;
+.Toolbar nav {
+    display: none;
+  }
+  @media (min-width: 500px) {
+    
+    .Toolbar nav {
+      display: block;
     }
-}
+  } 
