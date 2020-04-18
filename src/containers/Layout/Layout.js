@@ -5,7 +5,7 @@ import classes from './Layout.module.css';
 
 
   export default ({ children }) => {
-    const [drawerOpen, setDrawerOpen] = useState(true);
+    const [drawerOpen, setDrawerOpen] = useState(false);
 
     function toggleDrawer() {
       setDrawerOpen(!drawerOpen);
@@ -13,7 +13,7 @@ import classes from './Layout.module.css';
   
     return (
       <div className={classes.Layout}>
-        <Toolbar />
+        <Toolbar toggleDrawer={toggleDrawer}/>
         <Drawer open={drawerOpen} toggleDrawer={toggleDrawer} />
         <main>{children}</main>
       </div>
