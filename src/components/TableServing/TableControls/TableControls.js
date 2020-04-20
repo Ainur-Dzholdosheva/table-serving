@@ -18,6 +18,7 @@ export default({
   addIngredient, 
   removeIngredient}) => {
     
+    
     const controlsOutput = CONTROLS.map(control => 
     <TableControl 
     key={control.type}

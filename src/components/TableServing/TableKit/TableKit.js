@@ -14,10 +14,10 @@ export default ({price,ingredients}) => {
   return(
     <div className={classes.TableKit}>
     
-      <div> {ingredientsOutput}</div>
-      <div></div>
-      <div></div>
-      <div></div>
+      <div className="first"> {ingredientsOutput}</div>
+      <div className="second"></div>
+      <div className="third"></div>
+      <div className="fourth"></div>
       <div className={classes.price}> {price} som</div>
      </div>
   )};
