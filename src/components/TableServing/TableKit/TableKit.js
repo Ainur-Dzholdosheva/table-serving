@@ -15,14 +15,17 @@ export default ({price,ingredients}) => {
         "fourth",
       ], 
       index: 0
+
+      
     }
+    
     ingredientsOutput.push(
       <div className={output.classNames[output.index]}> 
         <SeaFood key={type+i} type={type} />
       </div>
     );
 
-    if (output.index > 3) {
+    if (output.index >3) {
       output.index = 0
     }
    }
@@ -31,6 +34,6 @@ export default ({price,ingredients}) => {
   return(
     <div className={classes.TableKit}>
       {ingredientsOutput}
-      <div className={classes.price}> {price} som</div>
+      <span className={classes.price}> {price} som</span>
      </div>
   )};
