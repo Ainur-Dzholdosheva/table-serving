@@ -10,7 +10,6 @@ export default ({ toggleDrawer }) => (
         <nav>
         <Navigation/>
         </nav>
-        hello
-        <DrawerToggle toggleDrawer={toggleDrawer}/>
+    <DrawerToggle toggleDrawer={toggleDrawer}/>
     </div>
 );
