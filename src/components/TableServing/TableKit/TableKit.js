@@ -6,18 +6,31 @@ export default ({price,ingredients}) => {
  let ingredientsOutput=[];
 
  Object.keys(ingredients).forEach(type => {
-   for(let i=0; i<ingredients[type]; i++){
-     ingredientsOutput.push(<SeaFood key={type+i} type={type} />);
+   for(let i=0; i < ingredients[type]; i++) {
+    let output = {
+      classNames: [
+        "first",
+        "second",
+        "third",
+        "fourth",
+      ], 
+      index: 0
+    }
+    ingredientsOutput.push(
+      <div className={output.classNames[output.index]}> 
+        <SeaFood key={type+i} type={type} />
+      </div>
+    );
+
+    if (output.index > 3) {
+      output.index = 0
+    }
    }
    
  });
   return(
     <div className={classes.TableKit}>
-    
-      <div className="first"> {ingredientsOutput}</div>
-      <div className="second"></div>
-      <div className="third"></div>
-      <div className="fourth"></div>
+      {ingredientsOutput}
       <div className={classes.price}> {price} som</div>
      </div>
   )};

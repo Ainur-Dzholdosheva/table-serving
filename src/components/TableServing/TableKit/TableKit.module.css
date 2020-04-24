@@ -10,11 +10,11 @@
 .TableKit .price{
     font-size: 2rem;
     font-weight: bold;
-    margin:10px;
+    
     display: flex;
     justify-content: center;
 }
- .TableKit div:nth-child(1){
+.TableKit div:nth-child(1){
     border: 1px solid red;
     width:495px;
     height: 70px;
@@ -32,6 +32,7 @@
      height: 200px;
      margin-bottom: 20px;
      display: flex;
+     justify-content: center;
      flex-flow: column wrap;
      align-content: center;
      
@@ -44,6 +45,8 @@
     margin-left: 425px;
     margin-top: -220px;
     display: flex;
+    justify-content: center;
+
     flex-flow: column nowrap;
     
 }
