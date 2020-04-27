@@ -1,79 +1,76 @@
-.TableKit{
-    border:3px solid orange;
-    background-color: rgb(243, 193, 101);
-    width:100%;
-    max-width: 500px;
-    height:345px;
-    
-    margin-bottom: 40px;
-}
-.TableKit .price{
-    font-size: 2rem;
-    font-weight: bold;
-    
-    display: flex;
-    justify-content: center;
-    
-}
-.TableKit div:nth-child(1){
-    border: 1px solid red;
-    width:495px;
-    height: 70px;
-    display: flex;
-    flex-flow:row wrap;
-    justify-content: center;
-    align-content: center;
-}
- .TableKit div:nth-child(2){
-    border: 1px solid red;
-     width:70px;
-     height: 200px;
-     margin-bottom: 20px;
-     display: flex;
-     justify-content: center;
-     flex-flow: column wrap;
-     align-content: center;
-     
-     
- }
- .TableKit div:nth-child(3){
-    border: 1px solid red;
-    width:70px;
-    height: 200px;
-    margin-left: 425px;
-    margin-top: -220px;
-    display: flex;
-    justify-content: center;
-    flex-flow: column nowrap;
-    
-}
-.TableKit div:nth-child(4){
-    border: 1px solid red;
-    width:495px;
-    height: 70px;
+.TableKit {
+  border: 3px solid orange;
+  background-color: rgb(243, 193, 101);
+  width: 100%;
+  max-width: 500px;
+  height: 345px;
 
-    
-    display: flex;
-    flex-flow: row wrap;
-    justify-content: center;
-    align-content: center;
-    
+  margin-bottom: 40px;
+  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0);
+  background-position-x: -45px;
+  background-position-y: -90px;
 }
 
-@media (max-width:480px){
-    .TableKit{
-        width:450px;
-        margin-left: 120px;
-    }
-    .TableKit div:nth-child(1){
-        width:446px;
-    }
-    .TableKit div:nth-child(3){
-      margin-left: 376px;
-    }
-    .TableKit div:nth-child(4){
-        width:446px;
-    }
+.TableKit .price {
+  font-size: 2rem;
+  font-weight: bold;
+
+  display: flex;
+  justify-content: center;
+}
+.TableKit div:nth-child(1) {
+  border: 1px solid red;
+  width: 495px;
+  height: 70px;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+}
+.TableKit div:nth-child(2) {
+  border: 1px solid red;
+  width: 70px;
+  height: 200px;
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column wrap;
+  align-content: center;
+}
+.TableKit div:nth-child(3) {
+  border: 1px solid red;
+  width: 70px;
+  height: 200px;
+  margin-left: 425px;
+  margin-top: -220px;
+  display: flex;
+  justify-content: center;
+  flex-flow: column nowrap;
+}
+.TableKit div:nth-child(4) {
+  border: 1px solid red;
+  width: 495px;
+  height: 70px;
+
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-content: center;
+  overflow: hidden;
 }
 
- 
+@media (max-width: 480px) {
+  .TableKit {
+    width: 450px;
+    margin-left: 120px;
+  }
+  .TableKit div:nth-child(1) {
+    width: 446px;
+  }
+  .TableKit div:nth-child(3) {
+    margin-left: 376px;
+  }
+  .TableKit div:nth-child(4) {
+    width: 446px;
+  }
+}
