@@ -3,14 +3,14 @@
   height: 60px;
   border-radius: 30px;
   background-repeat: no-repeat;
-  margin: 10px;
 }
 .fish {
   background-image: url(../../../../assets/fish23.png);
 }
 
 .crab {
-  background-image: url(../../../../assets/crab23.png);
+  background-image: url(../../../../assets/image29.png);
+  background-position-x: -90px;
 }
 .salmon {
   background-image: url(../../../../assets/fish22.png);
