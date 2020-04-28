@@ -1,31 +1,26 @@
-.SeaFood{
-    width:70px;
-    height:60px;
-    border-radius: 30px;
-    background-repeat: no-repeat;
-    margin: 10px;
-    
-
+.SeaFood {
+  width: 70px;
+  height: 60px;
+  border-radius: 30px;
+  background-repeat: no-repeat;
+  margin: 10px;
 }
-.fish{
+.fish {
   background-image: url(../../../../assets/fish23.png);
-
 }
 
-.crab{
-  background-image: url(../../../../assets/crab23.png); 
-
+.crab {
+  background-image: url(../../../../assets/crab23.png);
 }
-.salmon{
+.salmon {
   background-image: url(../../../../assets/fish22.png);
-  
 }
-.lobster{
+.lobster {
   background-image: url(../../../../assets/lobster22.png);
 }
-.shrimp{
-background-image: url(../../../../assets/shrimp22.png);
+.shrimp {
+  background-image: url(../../../../assets/shrimp22.png);
 }
-.cavior{
+.cavior {
   background-image: url(../../../../assets/caviar22.png);
 }

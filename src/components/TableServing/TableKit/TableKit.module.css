@@ -45,7 +45,8 @@
   margin-top: -220px;
   display: flex;
   justify-content: center;
-  flex-flow: column nowrap;
+  align-content: center;
+  flex-flow: column wrap;
 }
 .TableKit div:nth-child(4) {
   border: 1px solid red;
