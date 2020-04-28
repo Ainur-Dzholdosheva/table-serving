@@ -5,12 +5,11 @@
   background-repeat: no-repeat;
 }
 .fish {
-  background-image: url(../../../../assets/fish23.png);
+  background-image: url(../../../../assets/image78.png);
 }
 
 .crab {
-  background-image: url(../../../../assets/image29.png);
-  background-position-x: -90px;
+  background-image: url(../../../../assets/crab30.png);
 }
 .salmon {
   background-image: url(../../../../assets/fish22.png);
@@ -19,7 +18,7 @@
   background-image: url(../../../../assets/lobster22.png);
 }
 .shrimp {
-  background-image: url(../../../../assets/shrimp22.png);
+  background-image: url(../../../../assets/image53.png);
 }
 .cavior {
   background-image: url(../../../../assets/caviar22.png);
