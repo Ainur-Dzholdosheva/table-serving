@@ -1,4 +1,4 @@
-.TableKit {
+.Table {
   border: 3px solid orange;
   background-color: rgb(243, 193, 101);
   width: 100%;
@@ -11,14 +11,14 @@
   background-position-y: -90px;
 }
 
-.TableKit .price {
+.Table .price {
   font-size: 2rem;
   font-weight: bold;
 
   display: flex;
   justify-content: center;
 }
-.TableKit div:nth-child(1) {
+.Table div:nth-child(1) {
   border: 1px solid red;
   width: 495px;
   height: 70px;
@@ -27,7 +27,7 @@
   justify-content: center;
   align-content: center;
 }
-.TableKit div:nth-child(2) {
+.Table div:nth-child(2) {
   border: 1px solid red;
   width: 70px;
   height: 200px;
@@ -37,7 +37,7 @@
   flex-flow: column wrap;
   align-content: center;
 }
-.TableKit div:nth-child(3) {
+.Table div:nth-child(3) {
   border: 1px solid red;
   width: 70px;
   height: 200px;
@@ -48,7 +48,7 @@
   align-content: center;
   flex-flow: column wrap;
 }
-.TableKit div:nth-child(4) {
+.Table div:nth-child(4) {
   border: 1px solid red;
   width: 495px;
   height: 70px;
@@ -61,17 +61,17 @@
 }
 
 @media (max-width: 480px) {
-  .TableKit {
+  .Table {
     width: 450px;
     margin-left: 120px;
   }
-  .TableKit div:nth-child(1) {
+  .Table div:nth-child(1) {
     width: 446px;
   }
-  .TableKit div:nth-child(3) {
+  .Table div:nth-child(3) {
     margin-left: 376px;
   }
-  .TableKit div:nth-child(4) {
+  .Table div:nth-child(4) {
     width: 446px;
   }
 }

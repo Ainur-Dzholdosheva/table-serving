@@ -1,6 +1,6 @@
 import React from "react";
-import classes from "./TableKit.module.css";
-import SeaFood from "./SeaFood/SeaFood";
+import classes from "./Table.module.css";
+import Serving from "./Serving/Serving";
 
 export default ({ price, ingredients }) => {
   let ingredientsOutput = [];
@@ -14,7 +14,7 @@ export default ({ price, ingredients }) => {
 
       ingredientsOutput.push(
         <div className={output.classNames[output.index]}>
-          <SeaFood key={type + i} type={type} />
+          <Serving key={type + i} type={type} />
         </div>
       );
 
@@ -24,7 +24,7 @@ export default ({ price, ingredients }) => {
     }
   });
   return (
-    <div className={classes.TableKit}>
+    <div className={classes.Table}>
       {ingredientsOutput}
 
       <span className={classes.price}> {price} som</span>
