@@ -5,6 +5,7 @@ import TableControls from "../../components/TableServing/TableControls/TableCont
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/TableServing/OrderSummary/OrderSummary";
 import axios from "../../axios";
+import Spinner from "../../components/UI/Spinner/Spinner";
 
 const PRICES = {
   fish: 150,
@@ -85,7 +86,7 @@ export default () => {
     }
   }
 
-  let orderSummary = "Loading...";
+  let orderSummary = <Spinner />;
   if (!Loading) {
     orderSummary = (
       <OrderSummary
