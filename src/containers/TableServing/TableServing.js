@@ -4,6 +4,7 @@ import classes from "./TableServing.module.css";
 import TableControls from "../../components/TableServing/TableControls/TableControls.js";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/TableServing/OrderSummary/OrderSummary";
+import axios from "../../axios";
 
 const PRICES = {
   fish: 150,
@@ -41,7 +42,20 @@ export default () => {
   }
 
   function finishOrder() {
-    alert("You are on the checkout page!");
+    const order = {
+      ingredients: ingredients,
+      price: price,
+      delivery: "fast",
+      customer: {
+        name: "Bakyt",
+        phone: "0700500600",
+        address: {
+          street: "123 gebze",
+          city: "Karakol",
+        },
+      },
+    };
+    axios.post("/orders.json", order).then((response) => console.log(response));
   }
 
   function addIngredient(type) {
