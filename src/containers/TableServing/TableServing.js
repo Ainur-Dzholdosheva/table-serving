@@ -6,6 +6,7 @@ import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/TableServing/OrderSummary/OrderSummary";
 import axios from "../../axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
+import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 
 const PRICES = {
   fish: 150,
@@ -15,7 +16,7 @@ const PRICES = {
   shrimp: 170,
   cavior: 200,
 };
-export default () => {
+export default withErrorHandler(() => {
   const [ingredients, setIngredients] = useState({
     fish: 0,
     crab: 0,
@@ -58,7 +59,7 @@ export default () => {
       },
     };
     setLoading(true);
-    axios.post("/orders.json", order).then((response) => {
+    axios.post("/orders", order).then((response) => {
       setLoading(false);
       setIsOrdering(false);
     });
@@ -113,4 +114,4 @@ export default () => {
       </Modal>
     </div>
   );
-};
+}, axios);
