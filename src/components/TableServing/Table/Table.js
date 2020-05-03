@@ -8,7 +8,7 @@ export default ({ price, ingredients }) => {
   Object.keys(ingredients).forEach((type) => {
     for (let i = 0; i < ingredients[type]; i++) {
       let output = {
-        classNames: ["first", "second", "third", "fourth"],
+        classNames: ["top", "left", "right", "bottom"],
         index: 0,
       };
 

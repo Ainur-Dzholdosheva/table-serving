@@ -1,7 +1,7 @@
 .Serving {
   width: 70px;
   height: 60px;
-  border-radius: 30px;
+  border-radius: 10px;
   background-repeat: no-repeat;
 }
 .fish {
@@ -12,7 +12,7 @@
   background-image: url(../../../../assets/crab30.png);
 }
 .salmon {
-  background-image: url(../../../../assets/fish22.png);
+  background-image: url(../../../../assets/image18.png);
 }
 .lobster {
   background-image: url(../../../../assets/image111.png);
