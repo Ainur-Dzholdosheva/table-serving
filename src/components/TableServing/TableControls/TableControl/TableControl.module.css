@@ -1,26 +1,25 @@
-.TableControl{
-    margin-bottom: 1rem;
+.TableControl {
+  margin-bottom: 1rem;
 }
-.TableControl .label{
-    color:rgb(48, 18, 18);
-    font-weight: bold;
-    font-style: italic;
+.TableControl .label {
+  color: rgb(48, 18, 18);
+  font-weight: bold;
+  font-style: italic;
 }
-.TableControl span{
+.TableControl span {
   margin-left: 10px;
   margin-right: 10px;
   font-size: 20px;
 }
-.TableControl button{
+.TableControl button {
   border: none;
-  border-radius: 10px;
+  border-radius: 20px;
   background-color: white;
-  color:blue;
-
+  color: blue;
 }
 .TableControl button:disabled {
-  opacity: .5;
+  opacity: 0.5;
 }
 .TableControl button:not(:disabled):hover {
-  opacity: .8;
+  opacity: 0.8;
 }

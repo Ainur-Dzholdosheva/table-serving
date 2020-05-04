@@ -50,11 +50,11 @@ export default withErrorHandler(() => {
       price: price,
       delivery: "fast",
       customer: {
-        name: "Bakyt",
+        name: "Ainur",
         phone: "0700500600",
         address: {
-          street: "123 gebze",
-          city: "Karakol",
+          street: "Lenina 7",
+          city: "Tup",
         },
       },
     };
