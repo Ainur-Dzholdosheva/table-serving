@@ -32,6 +32,7 @@
   width: 70px;
   height: 200px;
   margin-bottom: 20px;
+  transform: rotate(90deg);
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
@@ -43,6 +44,7 @@
   height: 200px;
   margin-left: 425px;
   margin-top: -220px;
+  transform: rotate(-90deg);
   display: flex;
   justify-content: center;
   align-content: center;
