@@ -32,7 +32,6 @@
   width: 70px;
   height: 200px;
   margin-bottom: 20px;
-  transform: rotate(90deg);
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
@@ -44,7 +43,6 @@
   height: 200px;
   margin-left: 425px;
   margin-top: -220px;
-  transform: rotate(-90deg);
   display: flex;
   justify-content: center;
   align-content: center;
@@ -62,7 +60,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   .Table {
     width: 450px;
   }
@@ -74,5 +72,23 @@
   }
   .Table div:nth-child(4) {
     width: 446px;
+  }
+}
+@media (max-width: 350px) {
+  .Table {
+    width: 314px;
+    background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0);
+    background-position-x: -50px;
+    background-position-y: -20px;
+    background-size: 430px;
+  }
+  .Table div:nth-child(1) {
+    width: 310px;
+  }
+  .Table div:nth-child(3) {
+    margin-left: 240px;
+  }
+  .Table div:nth-child(4) {
+    width: 310px;
   }
 }
