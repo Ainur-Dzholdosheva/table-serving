@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Table from "../../components/TableServing/Table/Table";
 import classes from "./TableServing.module.css";
 import TableControls from "../../components/TableServing/TableControls/TableControls.js";
@@ -17,14 +17,7 @@ const PRICES = {
   cavior: 200,
 };
 export default withErrorHandler(() => {
-  const [ingredients, setIngredients] = useState({
-    fish: 0,
-    crab: 0,
-    salmon: 0,
-    lobster: 0,
-    shrimp: 0,
-    cavior: 0,
-  });
+  const [ingredients, setIngredients] = useState(null);
   const [price, setPrice] = useState(100);
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
@@ -86,6 +79,27 @@ export default withErrorHandler(() => {
       setPrice(newPrice);
     }
   }
+  useEffect(() => {
+    axios
+      .get("/ingredients.json")
+      .then((response) => setIngredients(response.data));
+  }, []);
+
+  let output = <Spinner />;
+  if (ingredients) {
+    output = (
+      <>
+        <Table price={price} ingredients={ingredients} />
+        <TableControls
+          startOrder={startOrder}
+          canOrder={canOrder}
+          ingredients={ingredients}
+          addIngredient={addIngredient}
+          removeIngredient={removeIngredient}
+        />
+      </>
+    );
+  }
 
   let orderSummary = <Spinner />;
   if (!Loading && isOrdering) {
@@ -98,17 +112,10 @@ export default withErrorHandler(() => {
       />
     );
   }
+
   return (
     <div className={classes.TableServing}>
-      <Table price={price} ingredients={ingredients} />
-      <TableControls
-        startOrder={startOrder}
-        canOrder={canOrder}
-        ingredients={ingredients}
-        addIngredient={addIngredient}
-        removeIngredient={removeIngredient}
-      />
-
+      {output}
       <Modal show={isOrdering} hideCallback={cancelOrder}>
         {orderSummary}
       </Modal>
