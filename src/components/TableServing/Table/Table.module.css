@@ -26,6 +26,7 @@
   flex-flow: row wrap;
   justify-content: center;
   align-content: center;
+  transform: rotate(180deg);
 }
 .Table div:nth-child(2) {
   border: 1px solid transparent;
@@ -36,6 +37,7 @@
   justify-content: center;
   flex-flow: column wrap;
   align-content: center;
+  transform: rotate(90deg);
 }
 .Table div:nth-child(3) {
   border: 1px solid transparent;
@@ -47,6 +49,7 @@
   justify-content: center;
   align-content: center;
   flex-flow: column wrap;
+  transform: rotate(-90deg);
 }
 .Table div:nth-child(4) {
   border: 1px solid transparent;

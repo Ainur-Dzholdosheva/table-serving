@@ -8,7 +8,7 @@ const CONTROLS = [
   { label: "Crab", type: "crab" },
   { label: "Salmon", type: "salmon" },
   { label: "Lobster", type: "lobster" },
-  { label: "Caviar", type: "cavior" },
+  { label: "Soup", type: "cavior" },
   { label: "Shrimp", type: "shrimp" },
 ];
 export default ({

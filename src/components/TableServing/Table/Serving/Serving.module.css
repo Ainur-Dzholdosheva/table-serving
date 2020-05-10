@@ -1,25 +1,24 @@
 .Serving {
-  width: 70px;
+  width: 120px;
   height: 70px;
-  border-radius: 10px;
   background-repeat: no-repeat;
 }
 .fish {
-  background-image: url(../../../../assets/image78.png);
+  background-image: url(../../../../assets/plateoysters.png);
 }
 
 .crab {
-  background-image: url(../../../../assets/crab30.png);
+  background-image: url(../../../../assets/platecrab.png);
 }
 .salmon {
-  background-image: url(../../../../assets/image18.png);
+  background-image: url(../../../../assets/platefish2.png);
 }
 .lobster {
-  background-image: url(../../../../assets/image111.png);
+  background-image: url(../../../../assets/platelobster.png);
 }
 .shrimp {
-  background-image: url(../../../../assets/image53.png);
+  background-image: url(../../../../assets/plateshrimp.png);
 }
 .cavior {
-  background-image: url(../../../../assets/image136.png);
+  background-image: url(../../../../assets/platesoup.png);
 }
