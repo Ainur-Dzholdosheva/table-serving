@@ -1,20 +1,16 @@
-.Toolbar{
-    height: 70px;
-  
-    display: flex;
-    justify-content: space-between;
+.Toolbar {
+  height: 70px;
+  display: flex;
+  justify-content: space-between;
 
-    background-color: #f8b842;
-    font-weight: bold;
-    
+  background-color: #f8b842;
+  font-weight: bold;
 }
 .Toolbar nav {
-    display: none;
+  display: none;
+}
+@media (min-width: 500px) {
+  .Toolbar nav {
+    display: block;
   }
-  @media (min-width: 500px) {
-    
-    .Toolbar nav {
-      display: block;
-    }
-    
-  } 
+}

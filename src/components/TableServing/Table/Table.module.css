@@ -1,13 +1,18 @@
 .Table {
-  border: 3px solid wheat;
-  background-color: rgb(248, 204, 123);
+  border: 3px solid lightblue;
   width: 100%;
   max-width: 500px;
   min-height: 345px;
-
   margin-bottom: 40px;
-  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0);
-  background-position-x: -45px;
+
+  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0),
+    repeating-linear-gradient(
+      rgb(157, 195, 207) 0px,
+      rgb(115, 155, 167) 15px,
+      rgb(243, 237, 237) 15px,
+      rgb(243, 237, 237) 30px
+    );
+  background-position-x: -75px;
   background-position-y: -90px;
 }
 
@@ -63,7 +68,7 @@
   overflow: hidden;
 }
 
-@media (min-width: 500px) {
+@media (max-width: 500px) {
   .Table {
     width: 450px;
   }
@@ -75,23 +80,5 @@
   }
   .Table div:nth-child(4) {
     width: 446px;
-  }
-}
-@media (max-width: 350px) {
-  .Table {
-    width: 314px;
-    background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0);
-    background-position-x: -50px;
-    background-position-y: -20px;
-    background-size: 430px;
-  }
-  .Table div:nth-child(1) {
-    width: 310px;
-  }
-  .Table div:nth-child(3) {
-    margin-left: 240px;
-  }
-  .Table div:nth-child(4) {
-    width: 310px;
   }
 }
