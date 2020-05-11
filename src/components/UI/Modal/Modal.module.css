@@ -1,8 +1,4 @@
 .Modal {
-  display: flex;
-  justify-content: center;
-}
-.content {
   width: 90%;
   padding: 1rem;
   position: fixed;
@@ -19,9 +15,8 @@
   opacity: 1;
   transform: translateY(0);
 }
-
-@media (min-width: 500px) {
-  .content {
+@media (min-width: 600px) {
+  .Modal {
     width: 500px;
   }
 }

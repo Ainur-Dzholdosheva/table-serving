@@ -3,7 +3,7 @@
   background-color: rgb(248, 204, 123);
   width: 100%;
   max-width: 500px;
-  height: 345px;
+  min-height: 345px;
 
   margin-bottom: 40px;
   background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0);
@@ -63,7 +63,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .Table {
     width: 450px;
   }
