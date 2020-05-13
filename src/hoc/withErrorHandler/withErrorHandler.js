@@ -21,8 +21,8 @@ const withErrorHandler = (WrappedComponent, axios) => {
         }
       );
       return () => {
-        axios.interceptors.request.detach(requestInterceptor);
-        axios.interceptors.response.detach(responseInterceptor);
+        axios.interceptors.request.eject(requestInterceptor);
+        axios.interceptors.response.eject(responseInterceptor);
       };
     }, []);
     return (

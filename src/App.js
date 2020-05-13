@@ -1,9 +1,9 @@
 import React from "react";
+import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Layout from "./containers/Layout/Layout";
 import TableServing from "./containers/TableServing/TableServing";
 import Checkout from "./containers/Checkout/Checkout";
-import { Switch, Route, Redirect } from "react-router-dom";
 
 export default () => {
   return (
