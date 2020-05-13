@@ -1,12 +1,13 @@
 import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
+import axios from "../../axios";
 import Table from "../../components/TableServing/Table/Table";
-import classes from "./TableServing.module.css";
 import TableControls from "../../components/TableServing/TableControls/TableControls.js";
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/TableServing/OrderSummary/OrderSummary";
-import axios from "../../axios";
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
+import classes from "./TableServing.module.css";
 
 const PRICES = {
   fish: 150,
@@ -22,6 +23,7 @@ export default withErrorHandler(() => {
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
   const [Loading, setLoading] = useState(false);
+  const history = useHistory();
 
   function checkCanOrder(ingredients) {
     const total = Object.keys(ingredients).reduce((total, ingredient) => {
@@ -38,23 +40,17 @@ export default withErrorHandler(() => {
   }
 
   function finishOrder() {
-    const order = {
-      ingredients: ingredients,
-      price: price,
-      delivery: "fast",
-      customer: {
-        name: "Ainur",
-        phone: "0700500600",
-        address: {
-          street: "Lenina 7",
-          city: "Tup",
-        },
-      },
-    };
-    setLoading(true);
-    axios.post("/orders.json", order).then((response) => {
-      setLoading(false);
-      setIsOrdering(false);
+    const queryParams = Object.keys(ingredients).map(
+      (ingredient) =>
+        encodeURIComponent(ingredient) +
+        "=" +
+        encodeURIComponent(ingredients[ingredient])
+    );
+    queryParams.push("price" + encodeURIComponent(price.toFixed(2)));
+
+    history.push({
+      pathname: "/checkout",
+      search: queryParams.join("&"),
     });
   }
 
