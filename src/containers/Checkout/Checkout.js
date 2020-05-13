@@ -11,7 +11,7 @@ export default () => {
     shrimp: 0,
     cavior: 0,
   };
-  const price = 123;
+  const price = 100;
   return (
     <div className={classes.Checkout}>
       <CheckoutSummary ingredients={ingredients} price={price} />
