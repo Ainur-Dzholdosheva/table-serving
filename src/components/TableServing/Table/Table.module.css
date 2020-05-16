@@ -68,7 +68,7 @@
   overflow: hidden;
 }
 
-@media (max-width: 500px) {
+@media (min-width: 500px) {
   .Table {
     width: 450px;
   }
