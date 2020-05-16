@@ -98,7 +98,7 @@ export default withErrorHandler(() => {
   }
 
   let orderSummary = <Spinner />;
-  if (!Loading && isOrdering) {
+  if (isOrdering) {
     orderSummary = (
       <OrderSummary
         ingredients={ingredients}
