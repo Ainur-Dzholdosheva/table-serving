@@ -3,11 +3,11 @@ import classes from "./OrderSummary.module.css";
 import Button from "../../UI/Button/Button";
 
 const LABELS = {
-  fish: "Fish",
+  fish: "Oysters",
   crab: "Crab",
   salmon: "Salmon",
   lobster: "Lobster",
-  cavior: "Caviar",
+  cavior: "Soup",
   shrimp: "Shrimp",
 };
 

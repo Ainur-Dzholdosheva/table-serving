@@ -22,7 +22,6 @@ export default withErrorHandler(() => {
   const [price, setPrice] = useState(100);
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
-  const [Loading, setLoading] = useState(false);
   const history = useHistory();
 
   function checkCanOrder(ingredients) {
@@ -58,10 +57,10 @@ export default withErrorHandler(() => {
     const newIngredients = { ...ingredients };
     newIngredients[type]++;
     setIngredients(newIngredients);
+    checkCanOrder(newIngredients);
 
     const newPrice = price + PRICES[type];
     setPrice(newPrice);
-    checkCanOrder(newIngredients);
   }
 
   function removeIngredient(type) {
@@ -78,7 +77,8 @@ export default withErrorHandler(() => {
   useEffect(() => {
     axios
       .get("/ingredients.json")
-      .then((response) => setIngredients(response.data));
+      .then((response) => setIngredients(response.data))
+      .catch((error) => {});
   }, []);
 
   let output = <Spinner />;
@@ -101,16 +101,17 @@ export default withErrorHandler(() => {
   if (isOrdering) {
     orderSummary = (
       <OrderSummary
-        ingredients={ingredients}
+        price={price}
         finishOrder={finishOrder}
         cancelOrder={cancelOrder}
-        price={price}
+        ingredients={ingredients}
       />
     );
   }
 
   return (
     <div className={classes.TableServing}>
+      <h1>Sea food binner</h1>
       {output}
       <Modal show={isOrdering} hideCallback={cancelOrder}>
         {orderSummary}
