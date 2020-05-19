@@ -11,7 +11,7 @@ export default withErrorHandler(() => {
   const history = useHistory();
   const location = useLocation();
   const [ingredients, setIngredients] = useState({});
-  const [price, setPrice] = useState(0);
+  const [price, setPrice] = useState(100);
   const [loading, setLoading] = useState(false);
 
   useEffect(() => {

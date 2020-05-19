@@ -1,13 +1,13 @@
-.Drawer .content{
-    width:250px;
-    height:100%;
-    background-color:#f8b842;
-    position:fixed;
-    z-index: 200;
-    top: 0;
-    left:0;
-    box-shadow:0 0 5px rgba(0, 0, 0, 5);
-    transition: transform .3s ease-out;
+.Drawer .content {
+  width: 250px;
+  height: 100%;
+  background-color: #f8b842;
+  position: fixed;
+  z-index: 200;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  transition: transform 0.4s ease-in;
 }
 .Open {
   transform: translateX(0);
@@ -17,7 +17,7 @@
 }
 
 @media (min-width: 500px) {
-    .Drawer{
-      display: none;
-    }
-}  
+  .Drawer {
+    display: none;
+  }
+}

@@ -4,6 +4,7 @@ import Modal from "../../components/UI/Modal/Modal";
 const withErrorHandler = (WrappedComponent, axios) => {
   return (props) => {
     const [error, setError] = useState(null);
+
     function hideModal() {
       setError(false);
     }
@@ -37,5 +38,4 @@ const withErrorHandler = (WrappedComponent, axios) => {
     );
   };
 };
-
 export default withErrorHandler;
