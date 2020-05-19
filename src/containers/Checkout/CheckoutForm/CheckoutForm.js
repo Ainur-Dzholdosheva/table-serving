@@ -49,10 +49,8 @@ export default ({ checkoutFinish }) => {
         value={data.address}
         required
       />
-      <select required>
-        <option onChange={deliveryChange} value="">
-          - Delivery -
-        </option>
+      <select onChange={deliveryChange} required>
+        <option value="">- Delivery -</option>
         <option>Fastest</option>
         <option>Fast</option>
         <option>Regular</option>
