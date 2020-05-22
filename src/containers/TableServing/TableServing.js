@@ -101,10 +101,10 @@ export default withErrorHandler(() => {
   if (isOrdering) {
     orderSummary = (
       <OrderSummary
-        price={price}
+        ingredients={ingredients}
         finishOrder={finishOrder}
         cancelOrder={cancelOrder}
-        ingredients={ingredients}
+        price={price}
       />
     );
   }
