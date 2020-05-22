@@ -21,7 +21,9 @@ export default ({ control, disabled }) => {
 
       <button
         className={classes.more}
-        onClick={() => dispatch({ type: ADD_INGREDIENT })}
+        onClick={() =>
+          dispatch({ type: ADD_INGREDIENT, ingredient: control.type })
+        }
       >
         +
       </button>
