@@ -9,7 +9,9 @@ export default ({ control, removeIngredient, addIngredient, disabled }) => {
     <div className={classes.TableControl}>
       <button
         className={classes.less}
-        onClick={() => dispatch({ type: REMOVE_INGREDIENT })}
+        onClick={() =>
+          dispatch({ type: REMOVE_INGREDIENT, ingredients: control.type })
+        }
         disabled={disabled}
       >
         -
