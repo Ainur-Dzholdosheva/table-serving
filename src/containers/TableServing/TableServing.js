@@ -10,18 +10,9 @@ import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import classes from "./TableServing.module.css";
 import { useSelector } from "react-redux";
 
-const PRICES = {
-  fish: 150,
-  crab: 250,
-  salmon: 180,
-  lobster: 150,
-  shrimp: 170,
-  cavior: 200,
-};
 export default withErrorHandler(() => {
-  const { ingredients } = useSelector((state) => state);
+  const { ingredients, price } = useSelector((state) => state);
 
-  const [price, setPrice] = useState(100);
   const [canOrder, setCanOrder] = useState(false);
   const [isOrdering, setIsOrdering] = useState(false);
   const history = useHistory();
@@ -61,8 +52,8 @@ export default withErrorHandler(() => {
     // setIngredients(newIngredients);
     checkCanOrder(newIngredients);
 
-    const newPrice = price + PRICES[type];
-    setPrice(newPrice);
+    // const newPrice = price + PRICES[type];
+    // setPrice(newPrice);
   }
 
   function removeIngredient(type) {
@@ -72,8 +63,8 @@ export default withErrorHandler(() => {
       // setIngredients(newIngredients);
       checkCanOrder(newIngredients);
 
-      const newPrice = price - PRICES[type];
-      setPrice(newPrice);
+      // const newPrice = price - PRICES[type];
+      // setPrice(newPrice);
     }
   }
   /*

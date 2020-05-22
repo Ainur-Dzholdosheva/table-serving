@@ -11,6 +11,15 @@ const initialState = {
   },
   price: 100,
 };
+
+const PRICES = {
+  fish: 150,
+  crab: 250,
+  salmon: 180,
+  lobster: 150,
+  shrimp: 170,
+  cavior: 200,
+};
 export default (state = initialState, action) => {
   switch (action.type) {
     case actions.ADD_INGREDIENT:
@@ -20,6 +29,7 @@ export default (state = initialState, action) => {
           ...state.ingredients,
           [action.ingredient]: state.ingredients[action.ingredient] + 1,
         },
+        price: state.price + PRICES[action.ingredient],
       };
 
     case actions.REMOVE_INGREDIENT:
@@ -29,6 +39,7 @@ export default (state = initialState, action) => {
           ...state.ingredients,
           [action.ingredient]: state.ingredients[action.ingredient] - 1,
         },
+        price: state.price - PRICES[action.ingredient],
       };
     default:
       return state;
