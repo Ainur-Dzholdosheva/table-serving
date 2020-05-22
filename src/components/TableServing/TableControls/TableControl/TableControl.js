@@ -10,7 +10,7 @@ export default ({ control, disabled }) => {
       <button
         className={classes.less}
         onClick={() =>
-          dispatch({ type: REMOVE_INGREDIENT, ingredients: control.type })
+          dispatch({ type: REMOVE_INGREDIENT, ingredient: control.type })
         }
         disabled={disabled}
       >
