@@ -11,19 +11,11 @@ const CONTROLS = [
   { label: "Soup", type: "cavior" },
   { label: "Shrimp", type: "shrimp" },
 ];
-export default ({
-  startOrder,
-  canOrder,
-  ingredients,
-  addIngredient,
-  removeIngredient,
-}) => {
+export default ({ canOrder, ingredients, startOrder }) => {
   const controlsOutput = CONTROLS.map((control) => (
     <TableControl
       key={control.type}
       control={control}
-      addIngredient={addIngredient}
-      removeIngredient={removeIngredient}
       disabled={ingredients[control.type] === 0}
     />
   ));
