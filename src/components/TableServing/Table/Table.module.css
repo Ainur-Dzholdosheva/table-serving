@@ -5,15 +5,15 @@
   height: 300px;
   margin-bottom: 40px;
 
-  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=540&height=540&select=c5LpTzFqhgpage0),
+  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=500&height=500&select=c5LpTzFqhgpage0),
     repeating-linear-gradient(
       rgb(155, 191, 202) 0px,
       rgb(155, 191, 202) 15px,
       rgb(209, 197, 197) 15px,
       rgb(209, 197, 197) 30px
     );
-  background-position-x: -60px;
-  background-position-y: -85px;
+  background-position-x: -40px;
+  background-position-y: -55px;
 }
 
 .Table .price {
