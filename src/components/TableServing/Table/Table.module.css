@@ -1,19 +1,19 @@
 .Table {
   border: 3px solid lightblue;
   width: 100%;
-  max-width: 500px;
-  height: 345px;
+  max-width: 400px;
+  height: 300px;
   margin-bottom: 40px;
 
-  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=640&height=640&select=c5LpTzFqhgpage0),
+  background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=540&height=540&select=c5LpTzFqhgpage0),
     repeating-linear-gradient(
-      rgb(157, 195, 207) 0px,
-      rgb(115, 155, 167) 15px,
-      rgb(243, 237, 237) 15px,
-      rgb(243, 237, 237) 30px
+      rgb(155, 191, 202) 0px,
+      rgb(155, 191, 202) 15px,
+      rgb(209, 197, 197) 15px,
+      rgb(209, 197, 197) 30px
     );
-  background-position-x: -75px;
-  background-position-y: -90px;
+  background-position-x: -60px;
+  background-position-y: -85px;
 }
 
 .Table .price {
@@ -25,8 +25,9 @@
 }
 .Table div:nth-child(1) {
   border: 1px solid transparent;
-  width: 495px;
+  width: 150px;
   height: 70px;
+  margin-left: 130px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -36,8 +37,9 @@
 .Table div:nth-child(2) {
   border: 1px solid transparent;
   width: 70px;
-  height: 200px;
-  margin-bottom: 20px;
+  height: 100px;
+  margin-top: 50px;
+
   display: flex;
   justify-content: center;
   flex-flow: column wrap;
@@ -47,9 +49,9 @@
 .Table div:nth-child(3) {
   border: 1px solid transparent;
   width: 70px;
-  height: 200px;
-  margin-left: 425px;
-  margin-top: -220px;
+  height: 100px;
+  margin-left: 320px;
+  margin-top: -110px;
   display: flex;
   justify-content: center;
   align-content: center;
@@ -58,9 +60,10 @@
 }
 .Table div:nth-child(4) {
   border: 1px solid transparent;
-  width: 495px;
+  width: 150px;
   height: 70px;
-
+  margin-top: 15px;
+  margin-left: 130px;
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
@@ -70,15 +73,39 @@
 
 @media (min-width: 500px) {
   .Table {
-    width: 450px;
+    width: 400px;
+  }
+}
+@media (max-width: 450px) {
+  .Table {
+    width: 400px;
+    margin-right: 20px;
+  }
+}
+@media (max-width: 400px) {
+  .Table {
+    width: 370px;
+    margin-left: 20px;
+
+    background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=480&height=480&select=c5LpTzFqhgpage0),
+      repeating-linear-gradient(
+        rgb(155, 191, 202) 0px,
+        rgb(155, 191, 202) 15px,
+        rgb(209, 197, 197) 15px,
+        rgb(209, 197, 197) 30px
+      );
+    background-position-x: -60px;
+    background-position-y: -50px;
   }
   .Table div:nth-child(1) {
-    width: 446px;
+    margin-left: 120px;
   }
   .Table div:nth-child(3) {
-    margin-left: 376px;
+    margin-left: 290px;
   }
-  .Table div:nth-child(4) {
-    width: 446px;
+}
+@media (max-width: 350px) {
+  .Table {
+    margin-left: 50px;
   }
 }

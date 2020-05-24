@@ -14,3 +14,9 @@
     display: block;
   }
 }
+@media (max-width: 400px) {
+  .Toolbar {
+    width: 100%;
+    min-width: 360px;
+  }
+}
