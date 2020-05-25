@@ -9,8 +9,8 @@
     repeating-linear-gradient(
       rgb(182, 205, 212) 0px,
       rgb(182, 205, 212) 15px,
-      rgb(235, 228, 228) 15px,
-      rgb(235, 228, 228) 30px
+      rgb(250, 248, 248) 15px,
+      rgb(250, 248, 248) 30px
     );
   background-position-x: -40px;
   background-position-y: -55px;
@@ -91,8 +91,8 @@
       repeating-linear-gradient(
         rgb(182, 205, 212) 0px,
         rgb(182, 205, 212) 15px,
-        rgb(235, 228, 228) 15px,
-        rgb(235, 228, 228) 30px
+        rgb(250, 248, 248) 15px,
+        rgb(250, 248, 248) 30px
       );
     background-position-x: -60px;
     background-position-y: -50px;
