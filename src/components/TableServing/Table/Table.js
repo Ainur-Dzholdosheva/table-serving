@@ -27,7 +27,7 @@ export default ({ price, ingredients }) => {
     <div className={classes.Table}>
       {ingredientsOutput}
 
-      <span className={classes.price}> {price} som</span>
+      <span className={classes.price}>Price: {price} som</span>
     </div>
   );
 };

@@ -19,6 +19,7 @@
 .Table .price {
   font-size: 2rem;
   font-weight: bold;
+  color: #e67417;
 
   display: flex;
   justify-content: center;
