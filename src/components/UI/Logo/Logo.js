@@ -1,13 +1,10 @@
 import React from "react";
-
+import logo from "../../../assets/image54.png";
 import classes from "./Logo.module.css";
 
 export default () => (
   <div className={classes.Logo}>
-    <img
-      src="https://vectr.com/ainurdzholdosheva/a1KxXkUpxn.svg?width=640&height=640&select=a1KxXkUpxnpage0"
-      alt="Sea food binner"
-    />
+    <img src={logo} alt="Sea food binner" />
     <span> Sea food binner</span>
   </div>
 );

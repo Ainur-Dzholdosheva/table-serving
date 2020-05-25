@@ -1,16 +1,15 @@
-.Logo{
-    display: flex;
-    align-items: center;
+.Logo {
+  display: flex;
+  align-items: center;
 }
-.Logo img{
-    margin-top: -5px;
-   margin-left: -5px;
-    width:100px;
-    height:100px;
-    
+.Logo img {
+  margin-top: -2px;
+  margin-left: -5px;
+  width: 120px;
+  height: 66px;
 }
-.Logo span{
-    font-family: 'Redressed', cursive;
-    font-size: 30px;
-    color: ivory;
+.Logo span {
+  font-family: "Redressed", cursive;
+  font-size: 30px;
+  color: ivory;
 }
