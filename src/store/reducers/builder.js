@@ -1,14 +1,6 @@
 import * as types from "../actions/types";
-
 const initialState = {
-  ingredients: {
-    fish: { quantity: 0, price: 180, label: "Oysters" },
-    crab: { quantity: 0, price: 200, label: "Crab" },
-    salmon: { quantity: 0, price: 180, label: "Salmon" },
-    lobster: { quantity: 0, price: 150, label: "Lobster" },
-    shrimp: { quantity: 0, price: 170, label: "Shrimp" },
-    cavior: { quantity: 0, price: 190, label: "Soup" },
-  },
+  ingredients: null,
   price: 100,
 };
 
@@ -38,6 +30,11 @@ export default (state = initialState, action) => {
           },
         },
         price: state.price - state.ingredients[action.ingredient].price,
+      };
+    case types.SET_INGREDIENTS:
+      return {
+        ...state,
+        ingredients: action.ingredients,
       };
     default:
       return state;
