@@ -3,20 +3,13 @@ import classes from "./TableControls.module.css";
 import TableControl from "./TableControl/TableControl.js";
 import Button from "../../UI/Button/Button.js";
 
-const CONTROLS = [
-  { label: "Oysters", type: "fish" },
-  { label: "Crab", type: "crab" },
-  { label: "Salmon", type: "salmon" },
-  { label: "Lobster", type: "lobster" },
-  { label: "Soup", type: "cavior" },
-  { label: "Shrimp", type: "shrimp" },
-];
 export default ({ canOrder, ingredients, startOrder }) => {
-  const controlsOutput = CONTROLS.map((control) => (
+  const controlsOutput = Object.keys(ingredients).map((ingredient) => (
     <TableControl
-      key={control.type}
-      control={control}
-      disabled={ingredients[control.type] === 0}
+      key={ingredient}
+      ingredient={ingredient}
+      label={ingredients[ingredient].label}
+      disabled={ingredients[ingredient].quantity === 0}
     />
   ));
   return (

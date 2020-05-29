@@ -5,8 +5,8 @@ import Serving from "./Serving/Serving";
 export default ({ price, ingredients }) => {
   let ingredientsOutput = [];
 
-  Object.keys(ingredients).forEach((type) => {
-    for (let i = 0; i < ingredients[type]; i++) {
+  Object.keys(ingredients).forEach((ingredient) => {
+    for (let i = 0; i < ingredients[ingredient].quantity; i++) {
       let output = {
         classNames: ["top", "left", "right", "bottom"],
         index: 0,
@@ -14,7 +14,7 @@ export default ({ price, ingredients }) => {
 
       ingredientsOutput.push(
         <div className={output.classNames[output.index]}>
-          <Serving key={type + i} type={type} />
+          <Serving key={ingredient + i} type={ingredient} />
         </div>
       );
 

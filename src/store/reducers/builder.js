@@ -2,24 +2,16 @@ import * as types from "../actions/types";
 
 const initialState = {
   ingredients: {
-    fish: 0,
-    crab: 0,
-    salmon: 0,
-    lobster: 0,
-    shrimp: 0,
-    cavior: 0,
+    fish: { quantity: 0, price: 180, label: "Oysters" },
+    crab: { quantity: 0, price: 200, label: "Crab" },
+    salmon: { quantity: 0, price: 180, label: "Salmon" },
+    lobster: { quantity: 0, price: 150, label: "Lobster" },
+    shrimp: { quantity: 0, price: 170, label: "Shrimp" },
+    cavior: { quantity: 0, price: 190, label: "Soup" },
   },
   price: 100,
 };
 
-const PRICES = {
-  fish: 150,
-  crab: 250,
-  salmon: 180,
-  lobster: 150,
-  shrimp: 170,
-  cavior: 200,
-};
 export default (state = initialState, action) => {
   switch (action.type) {
     case types.ADD_INGREDIENT:
@@ -27,9 +19,12 @@ export default (state = initialState, action) => {
         ...state,
         ingredients: {
           ...state.ingredients,
-          [action.ingredient]: state.ingredients[action.ingredient] + 1,
+          [action.ingredient]: {
+            ...state.ingredients[action.ingredient],
+            quantity: state.ingredients[action.ingredient].quantity + 1,
+          },
         },
-        price: state.price + PRICES[action.ingredient],
+        price: state.price + state.ingredients[action.ingredient].price,
       };
 
     case types.REMOVE_INGREDIENT:
@@ -37,9 +32,12 @@ export default (state = initialState, action) => {
         ...state,
         ingredients: {
           ...state.ingredients,
-          [action.ingredient]: state.ingredients[action.ingredient] - 1,
+          [action.ingredient]: {
+            ...state.ingredients[action.ingredient],
+            quantity: state.ingredients[action.ingredient].quantity - 1,
+          },
         },
-        price: state.price - PRICES[action.ingredient],
+        price: state.price - state.ingredients[action.ingredient].price,
       };
     default:
       return state;
