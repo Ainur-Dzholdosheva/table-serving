@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import { useSelector, useDispatch } from "react-redux";
 import { useHistory } from "react-router-dom";
 import axios from "../../axios";
 import Table from "../../components/TableServing/Table/Table";
@@ -8,7 +9,7 @@ import OrderSummary from "../../components/TableServing/OrderSummary/OrderSummar
 import Spinner from "../../components/UI/Spinner/Spinner";
 import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
 import classes from "./TableServing.module.css";
-import { useSelector, useDispatch } from "react-redux";
+
 import { load } from "../../store/actions/builder";
 
 export default withErrorHandler(() => {
