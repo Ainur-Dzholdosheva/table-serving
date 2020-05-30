@@ -13,7 +13,7 @@ import classes from "./TableServing.module.css";
 import { load } from "../../store/actions/builder";
 
 export default withErrorHandler(() => {
-  const { ingredients, price } = useSelector((state) => state);
+  const { ingredients, price } = useSelector((state) => state.builder);
   const [isOrdering, setIsOrdering] = useState(false);
   const history = useHistory();
   const dispatch = useDispatch();
