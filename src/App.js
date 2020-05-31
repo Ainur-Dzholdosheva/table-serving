@@ -3,8 +3,8 @@ import { Switch, Route, Redirect } from "react-router-dom";
 import "./App.css";
 import Layout from "./containers/Layout/Layout";
 import TableServing from "./containers/TableServing/TableServing";
-import Checkout from "./containers/Checkout/Checkout";
-import Orders from "./containers/Orders/Orders";
+import Checkout from "./components/Checkout/Checkout";
+import Orders from "./components/Orders/Orders";
 
 export default () => {
   return (
