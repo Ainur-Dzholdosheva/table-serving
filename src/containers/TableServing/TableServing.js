@@ -7,12 +7,12 @@ import TableControls from "../../components/TableServing/TableControls/TableCont
 import Modal from "../../components/UI/Modal/Modal";
 import OrderSummary from "../../components/TableServing/OrderSummary/OrderSummary";
 import Spinner from "../../components/UI/Spinner/Spinner";
-import withErrorHandler from "../../hoc/withErrorHandler/withErrorHandler";
+import withAxios from "../../hoc/withAxios/withAxios";
 import classes from "./TableServing.module.css";
 
 import { load } from "../../store/actions/builder";
 
-export default withErrorHandler(() => {
+export default withAxios(() => {
   const { ingredients, price } = useSelector((state) => state.builder);
   const [isOrdering, setIsOrdering] = useState(false);
   const history = useHistory();
