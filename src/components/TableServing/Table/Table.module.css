@@ -8,23 +8,19 @@
   background-image: url(https://vectr.com/ainurdzholdosheva/c5LpTzFqhg.svg?width=500&height=500&select=c5LpTzFqhgpage0),
     repeating-linear-gradient(
       rgb(182, 195, 212) 0px,
-      rgb(182, 195, 212) 15px,
-      rgb(250, 248, 248) 15px,
-      rgb(250, 248, 248) 30px
+      rgb(182, 195, 212) 20px,
+      rgb(250, 248, 248) 20px,
+      rgb(250, 248, 248) 40px
     );
   background-position-x: -40px;
-  background-position-y: -55px;
+  background-position-y: 20px;
 }
 
 .price {
   font-size: 2rem;
   font-weight: bold;
-  color: #e67417;
-  margin-top: 500px;
-  margin-left: -550px;
-
-  display: flex;
-  justify-content: center;
+  color: rgb(245, 172, 37);
+  background-color: white;
 }
 
 .Table .top {
@@ -91,12 +87,6 @@
       );
     background-position-x: -60px;
     background-position-y: -50px;
-  }
-  .Table div:nth-child(1) {
-    margin-left: 120px;
-  }
-  .Table div:nth-child(3) {
-    margin-left: 290px;
   }
 }
 @media (max-width: 350px) {

@@ -30,17 +30,14 @@ export default ({ price, ingredients }) => {
   });
 
   return (
-    <>
-      <div className={classes.Table}>
-        <div className={classes.top}>{sides.top}</div>
-        <div className={classes.leftRight}>
-          <div className={classes.left}>{sides.left}</div>
-          <div className={classes.right}>{sides.right}</div>
-        </div>
-        <div className={classes.bottom}>{sides.bottom}</div>
+    <div className={classes.Table}>
+      <div className={classes.top}>{sides.top}</div>
+      <div className={classes.leftRight}>
+        <div className={classes.left}>{sides.left}</div>
+        <div className={classes.right}>{sides.right}</div>
       </div>
-
+      <div className={classes.bottom}>{sides.bottom}</div>
       <span className={classes.price}>Price: {price} som</span>
-    </>
+    </div>
   );
 };
