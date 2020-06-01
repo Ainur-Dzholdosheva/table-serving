@@ -5,29 +5,46 @@ import Serving from "./Serving/Serving";
 export default ({ price, ingredients }) => {
   let ingredientsOutput = [];
 
+  const sides = {
+    top: [],
+    right: [],
+    bottom: [],
+    left: [],
+  };
+
+  let count = 1;
   Object.keys(ingredients).forEach((ingredient) => {
     for (let i = 0; i < ingredients[ingredient].quantity; i++) {
-      let output = {
-        classNames: ["top", "left", "right", "bottom"],
-        index: 0,
-      };
-
-      ingredientsOutput.push(
-        <div className={output.classNames[output.index]}>
-          <Serving key={ingredient + i} type={ingredient} />
-        </div>
-      );
-
-      if (output.index > 3) {
-        output.index = 0;
+      if ((count % 4) == 0 && sides.top.length < 3) {
+        sides.top.push(<Serving key={ingredient + i} type={ingredient} />);
       }
+      else if ((count % 3) == 0) {
+        sides.right.push(<Serving key={ingredient + i} type={ingredient} />);
+      } 
+      else if ((count % 2) == 0 && sides.bottom.length < 3)  {
+        sides.bottom.push(<Serving key={ingredient + i} type={ingredient} />);
+      }
+      else if ((count % 1) == 0) {
+        sides.left.push(<Serving key={ingredient + i} type={ingredient} />);
+      }
+
+      count++;
     }
   });
-  return (
-    <div className={classes.Table}>
-      {ingredientsOutput}
 
-      <span className={classes.price}>Price: {price} som</span>
+  return (
+    <>
+    <div className={classes.Table}>
+      <div className={classes.top}>{sides.top}</div>
+      <div className={classes.leftRight}>
+        <div className={classes.left}>{sides.left}</div>
+        <div className={classes.right}>{sides.right}</div>
+      </div>
+      <div className={classes.bottom}>{sides.bottom}</div>
     </div>
+
+
+    <span className={classes.price}>Price: {price} som</span>
+    </>
   );
 };
