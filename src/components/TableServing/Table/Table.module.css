@@ -23,7 +23,7 @@
 .price {
   font-size: 2rem;
   font-weight: bold;
-  color: rgb(245, 172, 37);
+  color: rgb(228, 157, 25);
   margin-top: -40px;
   display: flex;
   justify-content: center;
@@ -64,9 +64,6 @@
   margin-top: 160px;
   transform: rotate(90deg);
 }
-
-/* .Table .leftRight {
-} */
 
 @media (min-width: 500px) {
   .binner {
