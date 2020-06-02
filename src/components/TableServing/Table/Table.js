@@ -3,8 +3,6 @@ import classes from "./Table.module.css";
 import Serving from "./Serving/Serving";
 
 export default ({ price, ingredients }) => {
-  let ingredientsOutput = [];
-
   const sides = {
     top: [],
     right: [],
@@ -31,12 +29,14 @@ export default ({ price, ingredients }) => {
 
   return (
     <div className={classes.Table}>
-      <div className={classes.top}>{sides.top}</div>
-      <div className={classes.leftRight}>
-        <div className={classes.left}>{sides.left}</div>
-        <div className={classes.right}>{sides.right}</div>
+      <div className={classes.binner}>
+        <div className={classes.top}>{sides.top}</div>
+        <div className={classes.leftRight}>
+          <div className={classes.left}>{sides.left}</div>
+          <div className={classes.right}>{sides.right}</div>
+        </div>
+        <div className={classes.bottom}>{sides.bottom}</div>
       </div>
-      <div className={classes.bottom}>{sides.bottom}</div>
       <span className={classes.price}>Price: {price} som</span>
     </div>
   );
