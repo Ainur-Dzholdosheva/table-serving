@@ -13,8 +13,8 @@ export default withAxios(() => {
   const { token, id } = useSelector((state) => state.auth);
 
   useEffect(() => {
-    load(dispatch, token);
-  }, [dispatch, token, id]);
+    load(dispatch, token, id);
+  }, [dispatch, token]);
 
   let ordersOutput = <Spinner />;
   if (orders) {
