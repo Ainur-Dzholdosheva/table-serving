@@ -19,11 +19,18 @@ export const fail = (dispatch, errors) =>
     errors,
   });
 
-export const auth = (dispatch, email, password) =>
+const key = "AIzaSyDlqUuRRBPx47NR3u_hnTnR0asp-w9JVTo";
+const signInUrl =
+  "https://identitytoolkit.googleapis.com/v1/accounts:signInWithPassword?key=" +
+  key;
+const signUpUrl =
+  "https://identitytoolkit.googleapis.com/v1/accounts:signUp?key=" + key;
+export const auth = (dispatch, method, email, password) =>
   axios
-    .post(
-      "https://identitytoolkit.googleapis.com/v1/accounts:signInWithCustomToken?key=AIzaSyDlqUuRRBPx47NR3u_hnTnR0asp-w9JVTo",
-      { email, password }
-    )
+    .post(method === "signin" ? signInUrl : signUpUrl, {
+      email,
+      password,
+      returnSecureToken: true,
+    })
     .then(({ data }) => success(dispatch, data))
     .catch((error) => fail(dispatch, error));
