@@ -58,7 +58,7 @@ export default withAxios(() => {
   }
   return (
     <div className={classes.TableServing}>
-      <h1>Sea food binner</h1>
+      <h1>Sea food dinner</h1>
       {output}
     </div>
   );
